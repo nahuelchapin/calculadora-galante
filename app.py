@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 # --- LOGO ---
-st.image("logo_galante.jpeg", use_column_width=True)
+st.image("logo_galante.jpeg", use_container_width=True)
 
 st.markdown("""
 <style>
