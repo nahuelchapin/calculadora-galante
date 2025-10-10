@@ -7,6 +7,23 @@ st.set_page_config(
     layout="centered"
 )
 
+# --- LOGO (eliminado para evitar errores) ---
+# st.image("logo_galante.jpeg", use_column_width=True)
+
+st.markdown("""
+<style>
+    body {
+        background-color: white;
+    }
+    .stButton>button {
+        background-color: #e3b500;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px;
+        height: 3em;
+        width: 100%;
+    }
+</style>
 """, unsafe_allow_html=True)
 
 st.title("Calculadora de Interés de Suscripción")
@@ -47,4 +64,4 @@ if st.button("Calcular"):
     st.write(f"*Valor de cada cuota ({cuotas}):* ${valor_cuota:,.2f}")
 
 st.divider()
-st.caption("© Galante D’Antonio - Calculadora de financiación | Versión Streamlit 2025")
+st.caption("©️ Galante D’Antonio - Calculadora de financiación | Versión Streamlit 2025")
